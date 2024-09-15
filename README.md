@@ -7,7 +7,7 @@ Framework : React v.
 Test code : jest  
 
 Was Server : AWS EC2 or Azure  
-Framework : Spring boot v.  
+Framework : Spring boot v.3.3.3 (java 17)  
 Test code : Junit  
 DB : MYSQL v.  
 Resources : S3  
