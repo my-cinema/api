@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.inin.mycinema.user.mapper">
+    <insert id="insertUser" parameterType="map" useGeneratedKeys="true" keyProperty="userNo">
+        INSERT INTO USER (
+                user_name
+                , user_email
+                , user_status
+                , access_token
+                , refresh_token
+                , update_dt
+            ) VALUES (
+                #{insertUserMapper.name}
+                , #{insertUserMapper.email}
+                , '00'
+                , #{insertUserMapper.accessToken}
+                , #{insertUserMapper.refreshToken}
+                , ''
+            )
+    </insert>
+</mapper>

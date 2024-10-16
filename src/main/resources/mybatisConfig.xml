@@ -1,0 +1,18 @@
+<configuration>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:[Database]://cine-db.mysql.database.azure.com"/>
+                <property name="username" value="azureuser"/>
+                <property name="password" value="Clqldp124!mysql"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="org.inin.mycinema.userMapper.xml"/>
+    </mappers>
+
+</configuration>
